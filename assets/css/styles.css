@@ -1,0 +1,161 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  padding: 2rem;
+}
+
+@font-face {
+  font-family: 'DS-Digital'; /* Nombre que le asignas a la fuente */
+  src: url('../fonts/ds_digital/DS-DIGI.TTF') format('truetype'); /* Ruta del archivo .ttf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ******************** ESTILOS PARA CALCULADORA  *********************/
+
+.key {
+  background-color: #52525b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.key:hover {
+  background-color: #71717a;
+}
+
+.keys {
+  height: 100%;
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 20px;
+}
+
+.calculator {
+  margin-right: 5rem;
+  padding: 2rem;
+  padding-top: 5rem;
+  border-radius: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #171717;
+}
+
+.screen {
+  width: 100%;
+  height: 40px;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  text-align: right;
+  font-size: 34px;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.operations-screen {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #d1d5db;
+  letter-spacing: 0.2rem;
+}
+
+.orange {
+  background-color: #f59e0b;
+}
+
+.orange:hover {
+  background-color: #fbbf24;
+}
+
+.white {
+  background-color: #f9fafb;
+  color: black;
+}
+
+.white:hover {
+  background-color: #e5e7eb;
+}
+
+.zero {
+  grid-area: 5 / 1 / 6 / 3; /* posición de fila inicio / posición de columna inicio / posición de fila fin / posición de columna fin */
+  border-radius: 20px;
+}
+
+/* ******************** ESTILOS PARA CRONOMETRO *********************/
+.frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-color: #fbbf24;
+}
+
+.chronometer-screen {
+  font-family: 'DS-Digital', 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.684);
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8d9d60;
+}
+
+.chronometer-screen * {
+  font-family: 'DS-Digital', 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.684);
+}
+
+.chronometer {
+  padding: 2rem;
+  /* background-color: red; */
+}
+
+.play-stop {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  left: 50%; /* Lo centra horizontalmente */
+  transform: translate(-50%, -100%);
+  background-color: #3b82f6;
+  border-radius: 4px;
+  border: none;
+}
+
+.restart {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 2rem;
+  right: 0; /* Lo centra horizontalmente */
+  transform: translate(-50%, -100%);
+  background-color: #ef4444;
+  border-radius: 4px;
+  border: none;
+  transform: rotate(50deg);
+}

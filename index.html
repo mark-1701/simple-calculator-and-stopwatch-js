@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora y Cronometro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js" integrity="sha512-B2caA1wJW/b3Jhbhbb9waDjQ7NdG30fkULe9CgCzilQ8CUEdh2NdyGi/GrB+0kQdgfBbUdiLyAP2xdcDzNA6Ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="operations-screen">history</div>
+      <div class="screen">0</div>
+      <div class="keys">
+        <div class="key white">AC</div>
+        <div class="key white">+/-</div>
+        <div class="key white">%</div>
+        <div class="key orange">÷</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key orange">*</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key orange">-</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key orange">+</div>
+        <div class="key">.</div>
+        <div class="key orange">=</div>
+        <div class="key zero">0</div>
+      </div>
+    </div>
+    <div class="chronometer">
+      <div class="frame">
+        <div class="chronometer-screen"><span class="minutes">00</span>:<span class="seconds">00</span></div>
+        <button class="play-stop"></button>
+        <button class="restart"></button>
+      </div>
+    </div>
+    <script type="module" src="js/logic.js"></script>
+  </body>
+</html>
